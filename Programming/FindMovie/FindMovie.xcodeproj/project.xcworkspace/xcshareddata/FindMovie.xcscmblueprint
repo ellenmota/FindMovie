@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A7DA2BAC0A1DFF816B5256D066A026454A947953",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "21A40A5B2675636BBFD619F0CF929E90921FE379" : 9223372036854775807,
+    "A7DA2BAC0A1DFF816B5256D066A026454A947953" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8ACF6B6-0DFF-495B-B77B-E67E4B1DC1DE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "21A40A5B2675636BBFD619F0CF929E90921FE379" : "",
+    "A7DA2BAC0A1DFF816B5256D066A026454A947953" : "FindMovie\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FindMovie",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Programming\/FindMovie\/FindMovie.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ellenmota\/Swift3.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21A40A5B2675636BBFD619F0CF929E90921FE379"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ellenmota\/FindMovie.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7DA2BAC0A1DFF816B5256D066A026454A947953"
+    }
+  ]
+}
