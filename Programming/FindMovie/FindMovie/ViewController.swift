@@ -32,14 +32,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
-    
-        for i in 0..<movies!.count
-        {
-            cell.titleMovie.text = movies?[i].title
-            cell.genderMovie.text = movies?[i].genre
-            cell.runtimeMovie.text = movies?[i].duration
-        }
-        //tableView.reloadData()
+            cell.titleMovie.text = movies?[indexPath.row].title
+            cell.genderMovie.text = movies?[indexPath.row].genre
+            cell.runtimeMovie.text = movies?[indexPath.row].duration
 
          return cell
     }
