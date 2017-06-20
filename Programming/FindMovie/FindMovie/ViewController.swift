@@ -15,14 +15,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    
-    //let urlString = "http://www.json-generator.com/api/json/get/cqJGxBUSHm?indent=2"
-    
     let urlString = "http://www.json-generator.com/api/json/get/cpMVloHGHm?indent=2"
     
     
     var movies:[Movie]? = nil
-    
+
     
     //Retorna o numero de celulas
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -35,7 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
-        cell.titleMovie.text = "hwishwdh"
+        cell.titleMovie.text = "ede"
         cell.genderMovie.text = "Action / Adventure / Fantasy"
         cell.runtimeMovie.text = "121 min"
         //tableView.reloadData()
@@ -78,7 +75,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                         let duration = movie["duracao"] as? Int
                         let genre = movie["genero"] as? String
                         //Montar o objeto
-                        
                         if let title = title, let duration = duration, let genre = genre {
                             let movieData = Movie(title: title, duration: duration, genre: genre)
                             movieArray.append(movieData)
