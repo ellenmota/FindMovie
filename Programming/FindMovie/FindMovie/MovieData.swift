@@ -13,7 +13,8 @@ import Foundation
 struct Movie {
     
     var title:String
-    var duration:Int
+    var duration:String
     var genre:String
     
 }
+

@@ -15,11 +15,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    let urlString = "http://www.json-generator.com/api/json/get/cpMVloHGHm?indent=2"
+    let urlString = "http://www.json-generator.com/api/json/get/bUHqHHXxHC?indent=2"
     
     
     var movies:[Movie]? = nil
-
+    
     
     //Retorna o numero de celulas
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -32,12 +32,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
-        cell.titleMovie.text = "ede"
-        cell.genderMovie.text = "Action / Adventure / Fantasy"
-        cell.runtimeMovie.text = "121 min"
+    
+        for i in 0..<movies!.count
+        {
+            cell.titleMovie.text = movies?[i].title
+            cell.genderMovie.text = movies?[i].genre
+            cell.runtimeMovie.text = movies?[i].duration
+        }
         //tableView.reloadData()
 
-        return cell
+         return cell
     }
     
 
@@ -57,9 +61,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    
+    //Parse Json
     public func findJson(_ completion:@escaping ([Movie]?) -> Void)
     {
-        
         
         Alamofire.request(urlString).responseJSON { response in
             if let JSON = response.result.value as? [String:AnyObject]
@@ -72,12 +77,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     for movie in movieList {
                         //Trata o filme
                         let title = movie["titulo"] as? String
-                        let duration = movie["duracao"] as? Int
+                        let duration = movie["duracao"] as? String
                         let genre = movie["genero"] as? String
                         //Montar o objeto
                         if let title = title, let duration = duration, let genre = genre {
                             let movieData = Movie(title: title, duration: duration, genre: genre)
                             movieArray.append(movieData)
+                            
                         }
                         
                     }
