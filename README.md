@@ -2,9 +2,9 @@
 Busca a partir do nome do filme, mas informações do mesmo.
 
 ## Dependências Necessárias
-No mini projeto foi utilizado requisições JSON, para facilitara serialização utilizei a dependecia ou pod [Alamofire](https://github.com/Alamofire/Alamofire)
+No mini projeto foi utilizado requisições JSON, para facilitar a serialização utilizei a dependecia ou pod [Alamofire](https://github.com/Alamofire/Alamofire)
 
-Nota: Se não tiver instalado o cocoapods (gerenciador de dependecias), segue o primeiro passo, senão, só ignorar.
+**Nota**: Se não tiver instalado o cocoapods (gerenciador de dependecias), segue o primeiro passo, senão, só ignorar e ir para o 2.
 
 ### 1 - Instalação do cocoapods
 
